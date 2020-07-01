@@ -1,0 +1,28 @@
+#todosData
+{
+border: 2px solid whitesmoke;
+border-radius: 15px; 
+font-family: 'Baloo 2', cursive;
+border-collapse: collapse;
+width: 100%;
+}
+#todosData td , #todosData th
+{
+  border: 1px solid whitesmoke;
+  padding: 8px;
+  color:blue;
+  font-size: 22px;
+}
+#todosData tr:hover
+{
+  background-color: hotpink;
+}
+#todosData td:hover
+{
+  color: white;
+}
+.checkBox
+{
+width: 25px;
+height: 25px;
+}

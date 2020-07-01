@@ -1,0 +1,12 @@
+<div class="container" style="text-align: center;margin-top: 20px;margin-bottom: 20px;overflow-x:auto;border-radius: 15px;border: 1px solid whitesmoke;background-color: whitesmoke;">
+    <table id="todosData" style="margin: 0 auto;">
+        <tr align=center><th>Serial No.</th><th>Title</th><th>Completed</th></tr>
+        <tr *ngFor="let item of httpdata"><td>{{++i}}</td><td>{{item.title}}</td>
+            <td>
+                <input type='checkbox' *ngIf="item.completed ; else notCompleted" checked disabled>
+                <ng-template #notCompleted>
+                    <input type='checkbox' class='checkBox' onchange='attachCheckBoxHandler().then((e)=>{alert(e)})'>
+                </ng-template>
+            </td></tr>
+    </table>
+</div>
